@@ -45,6 +45,7 @@ grunt.initConfig({
       commit: true,
       commitMessage: 'Release v%VERSION%',
       commitFiles: ['package.json'],
+      gitAllowedBranches: ['prod'],
       createTag: true,
       tagName: 'v%VERSION%',
       tagMessage: 'Version %VERSION%',
@@ -100,6 +101,12 @@ Type: `Array`
 Default value: `['package.json']`
 
 An array of files that you want to commit. You can use `['-a']` to commit all files.
+
+#### options.gitAllowedBranches
+Type: `Array`  
+Default value: `[]`
+
+An array of branch names on which version should be bumped. If array is empty then all branches are allowed.
 
 #### options.createTag
 Type: `Boolean`  

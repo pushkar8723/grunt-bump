@@ -2,21 +2,11 @@
 
 > Bump package version, create tag, commit, push ...
 
-## Badges
+## Changes from grunt-bump
+The project I am working on currently has a very frequent release cycles. And manually increasing version, commiting, taging and then pushing to git before each release becomes a very tedious process. So, I made changes to grunt-bump to change version only when it is ran on specific branches as I didn't need to bump version on development and testing branch. Thus, my problem is solved.
 
-[![NPM](https://nodei.co/npm/grunt-bump.png?downloads=true&downloadRank=true)](https://nodei.co/npm/grunt-bump/)
-
-[![Dependency Status](https://david-dm.org/vojtajina/grunt-bump/status.svg)](https://david-dm.org/vojtajina/grunt-bump)
-[![devDependency Status](https://david-dm.org/vojtajina/grunt-bump/dev-status.svg)](https://david-dm.org/vojtajina/grunt-bump?type=dev)
-
-[![GitHub stars](https://img.shields.io/github/stars/vojtajina/grunt-bump.svg)](https://github.com/vojtajina/grunt-bump/stargazers)
-[![GitHub contributors](https://img.shields.io/github/contributors/vojtajina/grunt-bump.svg)](https://github.com/vojtajina/grunt-bump/graphs/contributors)
-[![Pending Pull-Requests](http://githubbadges.herokuapp.com/vojtajina/grunt-bump/pulls.svg)](https://github.com/vojtajina/grunt-bump/pulls)
-
-[![GitHub issues](https://img.shields.io/github/issues/vojtajina/grunt-bump.svg)](https://github.com/vojtajina/grunt-bump/issues)
-[![Percentage of issues still open](http://isitmaintained.com/badge/open/vojtajina/grunt-bump.svg)](http://isitmaintained.com/project/vojtajina/grunt-bump "Percentage of issues still open")
-[![Average time to resolve an issue](http://isitmaintained.com/badge/resolution/vojtajina/grunt-bump.svg)](http://isitmaintained.com/project/vojtajina/grunt-bump "Average time to resolve an issue")
-
+## Why no pull request?
+I don't know if such automated versioning is even required by anyone else and so didn't create a pull request. 
 
 ## Getting Started
 This plugin requires Grunt.
@@ -24,7 +14,7 @@ This plugin requires Grunt.
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
-npm install grunt-bump --save-dev
+npm install pushkar8723/grunt-bump --save-dev
 ```
 
 Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
